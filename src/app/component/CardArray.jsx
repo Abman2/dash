@@ -6,6 +6,7 @@ export async function getData(url) {
 }
 export default async function CardArray() {
      const comments = await getData('https://abman2.github.io/repo-exercise/addresses.json');
+     console.log(comment)
      const details= comments.filter(x=>x.address.toLowerCase()=="bangladesh".toLowerCase())
    const comment = details.map(x=>x.comment)
 

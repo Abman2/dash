@@ -1,4 +1,4 @@
-"use client"
+
 import CardArray from './component/CardArray';
 import { NavBar } from './component/NavBar';
 import Link from "next/link"
