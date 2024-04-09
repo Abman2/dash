@@ -1,5 +1,4 @@
 import React from 'react'
-import { getData } from './CardArray'
 import { CommentCard } from './CommentCard'
 
 export  function CommentArray ({comment}) {
@@ -7,8 +6,7 @@ export  function CommentArray ({comment}) {
 
 
   return (
-    <>
-     {comment[0]?.map((datum) => {
+    comment[0]?.map((datum) => {
                     return (
                          <CommentCard
                               avatar={datum.avatar}
@@ -23,6 +21,7 @@ export  function CommentArray ({comment}) {
                               comments={datum.comments}
                          />
                     );
-               })}</>
+               })
+               
   )
 }
