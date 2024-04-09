@@ -41,11 +41,11 @@ export const Review = ({ toggleReview, address }) => {
                          <div>
                               <label htmlFor=''>Rating</label>
                               <div className='flex space-x-4 mt-2'>
-                                   <Image src={star2} className='w-5' />
-                                   <Image src={star2} className='w-5' />
-                                   <Image src={star2} className='w-5' />
-                                   <Image src={star2} className='w-5' />
-                                   <Image src={star2} className='w-5' />
+                                   <Image src={star2} className='w-5'  alt=""/>
+                                   <Image src={star2} className='w-5' alt="" />
+                                   <Image src={star2} className='w-5' alt="" />
+                                   <Image src={star2} className='w-5' alt="" />
+                                   <Image src={star2} className='w-5' alt="" />
                               </div>
                          </div>
                          <div className='mt-3 spce-y-2'>

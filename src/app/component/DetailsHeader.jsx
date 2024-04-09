@@ -24,8 +24,8 @@ export const DetailsHeader = ({address,setAddress,comment,toggleReview,amenities
         </div>
         <div className='flex space-x-4 mb-2'>
           <ReviewButton toggleReview={toggleReview}/>
-          <button className='border border-blue-600 rounded-xl px-3 py-1'><Image src={bookmark}/></button>
-          <button className='border border-blue-600 rounded-xl px-3 py-1'><Image src={share}/></button>
+          <button className='border border-blue-600 rounded-xl px-3 py-1'><Image src={bookmark} alt=""/></button>
+          <button className='border border-blue-600 rounded-xl px-3 py-1'><Image src={share} alt=""/></button>
         </div>
     </div>
     <div className='space-x-3 '>{amenities[0]?.map(ar=>{return <button key={ar} className='border my-2 py-0.5 text-xs bg-white rounded-md px-2 border-slate-500'>{ar}</button>})}</div>
