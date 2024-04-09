@@ -24,7 +24,7 @@ export  const useFetch = (url) => {
                     setLoading(false);
                     setError(err.message);
                });
-     }, []);
+     }, [url]);
   return (
    {data,loading,error}
   )
