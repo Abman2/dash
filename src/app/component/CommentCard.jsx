@@ -5,28 +5,27 @@ import message from '../Asset/message.svg';
 import like from '../Asset/like.svg';
 import dislike from "../Asset/dislike.svg"
 
-export const Card = ({avatar,name,review,likes,comments,dislikes,starRating,location,sector}) => {
+export const CommentCard = ({avatar,name,review,likes,comments,dislikes,starRating}) => {
      return (
-          <section className='bg-white rounded-md  p-3 '>
-               <article className='flex justify-between text-xs space-x-1 mb-3'>
+          <section className='bg-white  p-3 border-b-2'>
+               <article className='flex justify-between space-x-1 mb-3'>
                     <aside className='flex items-center'>
                          <Image src={avatar}   alt='avatar' width={3} height={3} className='me-2 rounded-full w-7 h-7' />
-                         <div className='flex flex-col'>
+                         <div className='flex items-center space-x-2'>
                               <b>{name}</b>
                               <small>5 months ago</small>
                          </div>
                     </aside>
                     <aside>
-                         <b>{location}</b>
-                         <small className='flex mt-1'>
+                         <small className='flex mt-1 space-x-1'>
                               <Image src={star} alt='star' />
-                              <Image src={star} alt='star' />
-                              <Image src={star} alt='star' />
-                              <Image src={star} alt='star' />
-                              <Image src={star} alt='star' />
+                              <small className=' text-base'>{starRating}</small>
                          </small>
                     </aside>
                </article>
+
+
+
                <article>
                     <p>{review}</p>
                     <aside className='flex justify-between mt-3'>
@@ -44,9 +43,7 @@ export const Card = ({avatar,name,review,likes,comments,dislikes,starRating,loca
                               <small>{comments}</small>
                               </div>
                          </div>
-                         <div>
-                              <button className=" rounded-3xl bg-red-500 text-xs px-4 font-semibold border border-slate-300">{sector}</button>
-                         </div>
+                       
                     </aside>
                </article>
           </section>

@@ -1,14 +1,30 @@
-import React from 'react'
-import { Card } from './Card'
-import useFetch from './useFetch'
-export const CardArray = () => {
-    const {data,loading,error} = useFetch("http://localhost:4000/comment")
-    alert(data)
-return(
-   
-    <section>
-     
-    </section>
-)
+import React from 'react';
+import { Card } from './Card';
+export async function getData(url) {
+     const res = await fetch(url, { next: { revalidate: 0 } });
+     return res.json();
+}
+export default async function CardArray() {
+     const comments = await getData('http://localhost:4000/comment');
 
+     return (
+          <section className='grid grid-cols-2 p-1  gap-5 lg:w-2/5 max-w-md mx-auto h-screen lg:h-full overflow-hidden lg:absolute -top-10 right-0 bg-slate-100'>
+               {comments.map((comment) => {
+                    return (
+                         <Card
+                              avatar={comment.avatar}
+                              key={comment.name}
+                              name={comment.name}
+                              review={comment.review}
+                              likes={comment.likes}
+                              dislikes={comment.dislikes}
+                              starRating={comment.starRating}
+                              sector={comment.sector}
+                              location={comment.location}
+                              comments={comment.comments}
+                         />
+                    );
+               })}
+          </section>
+     );
 }

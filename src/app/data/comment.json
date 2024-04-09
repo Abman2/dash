@@ -1,7 +1,7 @@
 {
   "comment":[
     {
-      "avatar": "https://example.com/avatar1.jpg",
+      "avatar": "https://robohash.org/avatar1.jpg",
       "name": "John Doe",
       "review": "This product is truly exceptional! It exceeded my expectations and delivered outstanding performance.",
       "likes": 10,
@@ -12,7 +12,7 @@
       "sector": "Power"
     },
     {
-      "avatar": "https://example.com/avatar2.jpg",
+      "avatar": "https://robohash.org/avatar2.jpg",
       "name": "Jane Smith",
       "review": "The customer service provided by the company was top-notch. They were incredibly helpful and went the extra mile to resolve my issue.",
       "likes": 15,
@@ -23,18 +23,18 @@
       "sector": "Tariff"
     },
     {
-      "avatar": "https://example.com/avatar3.jpg",
+      "avatar": "https://robohash.org/avatar3.jpg",
       "name": "David Johnson",
       "review": "I'm very satisfied with the quality of the product. It's definitely worth the price.",
       "likes": 20,
       "comments": 7,
       "dislikes": 3,
       "starRating": 4,
-      "location": "Port Harcourt, Nigeria",
+      "location": "Port Har, Nigeria",
       "sector": "Network"
     },
     {
-      "avatar": "https://example.com/avatar4.jpg",
+      "avatar": "https://robohash.org/avatar4.jpg",
       "name": "Sarah Brown",
       "review": "The product exceeded my expectations. I'm impressed by its performance and features.",
       "likes": 12,
@@ -45,8 +45,8 @@
       "sector": "Power"
     },
     {
-      "avatar": "https://example.com/avatar5.jpg",
-      "name": "Michael Williams",
+      "avatar": "https://robohash.org/avatar5.jpg",
+      "name": "Michae Williams",
       "review": "I had a great experience with this product. It's reliable and easy to use.",
       "likes": 8,
       "comments": 2,
@@ -56,8 +56,8 @@
       "sector": "Power"
     },
     {
-        "avatar": "https://example.com/avatar1.jpg",
-        "name": "John Doe",
+        "avatar": "https://robohash.org/avatar1.jpg",
+        "name": "Joh Doe",
         "review": "This product is truly exceptional! It exceeded my expectations and delivered outstanding performance.",
         "likes": 10,
         "comments": 5,
@@ -67,8 +67,8 @@
         "sector": "Power"
       },
       {
-        "avatar": "https://example.com/avatar2.jpg",
-        "name": "Jane Smith",
+        "avatar": "https://robohash.org/avatar2.jpg",
+        "name": "Jan Smith",
         "review": "The customer service provided by the company was top-notch. They were incredibly helpful and went the extra mile to resolve my issue.",
         "likes": 15,
         "comments": 3,
@@ -78,19 +78,19 @@
         "sector": "Tariff"
       },
       {
-        "avatar": "https://example.com/avatar3.jpg",
-        "name": "David Johnson",
+        "avatar": "https://robohash.org/avatar3.jpg",
+        "name": "Daid Johnson",
         "review": "I'm very satisfied with the quality of the product. It's definitely worth the price.",
         "likes": 20,
         "comments": 7,
         "dislikes": 3,
         "starRating": 4,
-        "location": "Port Harcourt, Nigeria",
+        "location": "Port , Nigeria",
         "sector": "Network"
       },
       {
-        "avatar": "https://example.com/avatar4.jpg",
-        "name": "Sarah Brown",
+        "avatar": "https://robohash.org/avatar4.jpg",
+        "name": "Saah Brown",
         "review": "The product exceeded my expectations. I'm impressed by its performance and features.",
         "likes": 12,
         "comments": 4,
@@ -100,8 +100,8 @@
         "sector": "Power"
       },
       {
-        "avatar": "https://example.com/avatar5.jpg",
-        "name": "Michael Williams",
+        "avatar": "https://robohash.org/avatar5.jpg",
+        "name": "Mihael Williams",
         "review": "I had a great experience with this product. It's reliable and easy to use.",
         "likes": 8,
         "comments": 2,
