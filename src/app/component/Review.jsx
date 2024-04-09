@@ -24,7 +24,7 @@ export const Review = ({ toggleReview, address }) => {
                               <div>
                               {amenities?.map(amenity=> {
                                 return(
-                                  <div className='flex  justify-between items-center w-full'>
+                                  <div className='flex  justify-between items-center w-full' key={amenity}>
                                  
                                  <div className='w-1/2'> <input type="checkbox" name="" id="" value={amenity} className='mr-2'/>
                                   <label htmlFor="">{amenity}</label></div>
