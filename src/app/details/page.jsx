@@ -10,7 +10,7 @@ import { NotFound } from '../component/NotFound'
 
 export default function Details ()  {
    const [address,setAddress] = useState("")
-    const{data} = useFetch("http://localhost:5000/addresses")
+    const{data} = useFetch("https://abman2.github.io/repo-exercise/addresses.json")
    const details= data.filter(x=>x.address.toLowerCase()==address.toLowerCase())
    const comment = details.map(x=>x.comment)
    const amenities = details.map(x=>x.amenities)

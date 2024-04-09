@@ -5,7 +5,7 @@ export async function getData(url) {
      return res.json();
 }
 export default async function CardArray() {
-     const comments = await getData('http://localhost:5000/addresses');
+     const comments = await getData('https://abman2.github.io/repo-exercise/addresses.json');
      const details= comments.filter(x=>x.address.toLowerCase()=="bangladesh".toLowerCase())
    const comment = details.map(x=>x.comment)
 
