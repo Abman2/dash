@@ -18,19 +18,19 @@ export const Review = ({ toggleReview, address }) => {
                     <form action=''>
                       <div className='flex bg-slate-50 justify-between items-center' onClick={e=> showAmenities()}>
                       <p className='font-semibold capitalize '>special Amenities</p>
-                      <Image src={downArrow}  />
+                      <Image src={downArrow} alt='dropdown'  />
                       </div>
                          {!amenity && <div className='w-full p-3 mb-2 bg-slate-100'>
                               <div>
                               {amenities?.map(amenity=> {
                                 return(
-                                  <div className='flex  justify-between items-center w-full' key={amenity}>
+                                  <div className='flex  justify-between items-center w-full' key={amenity}  >
                                  
                                  <div className='w-1/2'> <input type="checkbox" name="" id="" value={amenity} className='mr-2'/>
-                                  <label htmlFor="">{amenity}</label></div>
+                                  <label htmlFor="" key={amenity}>{amenity}</label></div>
                                  <div className='w-1/2'>
                                  <input type="checkbox" name="" id="" value={amenity} className='mr-2'/>
-                                  <label htmlFor="">{amenity}</label>
+                                  <label htmlFor="" key={amenity}>{amenity}</label>
                                  </div>
                                   </div>
                                 )
@@ -41,11 +41,11 @@ export const Review = ({ toggleReview, address }) => {
                          <div>
                               <label htmlFor=''>Rating</label>
                               <div className='flex space-x-4 mt-2'>
-                                   <Image src={star2} className='w-5'  alt=""/>
-                                   <Image src={star2} className='w-5' alt="" />
-                                   <Image src={star2} className='w-5' alt="" />
-                                   <Image src={star2} className='w-5' alt="" />
-                                   <Image src={star2} className='w-5' alt="" />
+                                   <Image src={star2} className='w-5'  alt="star"/>
+                                   <Image src={star2} className='w-5' alt="star" />
+                                   <Image src={star2} className='w-5' alt="star" />
+                                   <Image src={star2} className='w-5' alt="star" />
+                                   <Image src={star2} className='w-5' alt="star" />
                               </div>
                          </div>
                          <div className='mt-3 spce-y-2'>
