@@ -119,7 +119,8 @@
                     "https://robohash.org/avatar4.jpg",
                     "https://robohash.org/avatar3.jpg",
                     "https://robohash.org/avatar2.jpg"
-               ]
+               ],
+               "amenities":["school", "mosque","church","house" ,"sango","table","chair","bag","book"]
           },
           {
                "address": "bonny and clide street,ajao estate,Lagos",
@@ -240,7 +241,8 @@
                     "https://robohash.org/avatar4384.jpg",
                     "https://robohash.org/avatar4384.jpg",
                     "https://robohash.org/avatar4384.jpg"
-               ]
+               ],
+               "amenities":["Parking Lot", "Free wifi", "NightLife", "Hospitals", "Adult","security"]
           },
           {
                "address": "adewole",
@@ -361,7 +363,8 @@
                     "https://robohash.org/avatar345.jpg",
                     "https://robohash.org/avatar345.jpg",
                     "https://robohash.org/avatar345.jpg"
-               ]
+               ],
+               "amenities":["school", "mosque","church","house" ,"sango","table","chair","bag","book"]
           },
           {
                "address": "unilorin",
@@ -482,7 +485,8 @@
                     "https://robohash.org/avatar433.jpg",
                     "https://robohash.org/avatar333.jpg",
                     "https://robohash.org/avatar233.jpg"
-               ]
+               ],
+               "amenities":["Parking Lot", "Free wifi", "NightLife", "Hospitals", "Adult","security"]
           },
 
           {

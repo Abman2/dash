@@ -1,18 +1,26 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Image from 'next/image';
 import star from '../Asset/star.svg';
+import star2 from '../Asset/star2.svg';
+import downArrow from "../Asset/downArrow.svg"
 
 export const Review = ({ toggleReview, address }) => {
+  const [amenity, setAmenity] = useState(true)
+  const showAmenities = ()=>{
+      setAmenity(!amenity)
+  }
   const amenities = ["Parking Lot", "Free wifi", "NightLife", "Hospitals", "Adult","security"]
      return (
-          <div className='bg-slate-800 max-w-sreen flex justify-center items-center h-screen bg-blend-hue'>
+          <div className='bg-slate-800 max-w-sreen flex justify-center items-center h-screen bg-blend-hue p-8'>
                <div className=' lg:w-2/5 w-4/5 bg-white mx-auto p-4 '>
-
                     <h1 className='text-center font-bold'>Review Location</h1>
                     <h2 className='font-semibold text-xl uppercase'>{address}</h2>
                     <form action=''>
+                      <div className='flex bg-slate-50 justify-between items-center' onClick={e=> showAmenities()}>
                       <p className='font-semibold capitalize '>special Amenities</p>
-                         <div className='w-3/5 bg-slate-100'>
+                      <Image src={downArrow}  />
+                      </div>
+                         {!amenity && <div className='w-full p-3 mb-2 bg-slate-100'>
                               <div>
                               {amenities?.map(amenity=> {
                                 return(
@@ -28,15 +36,16 @@ export const Review = ({ toggleReview, address }) => {
                                 )
                               })}
                               </div>
-                         </div>
+                              </div>}
+                       
                          <div>
                               <label htmlFor=''>Rating</label>
                               <div className='flex space-x-4 mt-2'>
-                                   <Image src={star} className='w-5' />
-                                   <Image src={star} className='w-5' />
-                                   <Image src={star} className='w-5' />
-                                   <Image src={star} className='w-5' />
-                                   <Image src={star} className='w-5' />
+                                   <Image src={star2} className='w-5' />
+                                   <Image src={star2} className='w-5' />
+                                   <Image src={star2} className='w-5' />
+                                   <Image src={star2} className='w-5' />
+                                   <Image src={star2} className='w-5' />
                               </div>
                          </div>
                          <div className='mt-3 spce-y-2'>

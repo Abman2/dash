@@ -13,6 +13,7 @@ export default function Details ()  {
     const{data} = useFetch("http://localhost:5000/addresses")
    const details= data.filter(x=>x.address.toLowerCase()==address.toLowerCase())
    const comment = details.map(x=>x.comment)
+   const amenities = details.map(x=>x.amenities)
    const [showMenu, setShowMenu] = useState(false);
    const toggleReview = () => {
     setShowMenu(!showMenu);
@@ -22,7 +23,7 @@ export default function Details ()  {
    
   return (
    !showMenu?<>
-     <DetailsHeader toggleReview={toggleReview} address={address} setAddress={setAddress} comment={comment} /> 
+     <DetailsHeader toggleReview={toggleReview} address={address} setAddress={setAddress} comment={comment} amenities={amenities} /> 
     {comment.length == 0 && address.length != 0 ? <NotFound toggleReview={toggleReview}/> :<main className='flex max-w-7xl mx-auto'>
         <section className='w-3/5'>
             <CommentArray comment={comment}/>
