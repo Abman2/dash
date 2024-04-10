@@ -12,7 +12,7 @@ export const DetailsHeader = ({address,setAddress,comment,toggleReview,amenities
 
          <header className='bg-slate-100'>
      <nav className='flex  flex-row mx-auto justify-between py-5 lg:max-w-7xl max-w-md items-center '>
-     <Link href="/app"><Image src={logo} alt="aa" /></Link>
+     <Link href="/"><Image src={logo} alt="aa" /></Link>
     <Search address={address} setAddress={setAddress}/>
       <Link href="/" className='text-blue-600 uppercase text-sm tracking-wide font-semibold'>Login</Link>
      </nav>

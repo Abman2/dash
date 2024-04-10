@@ -16,7 +16,7 @@ export  const useFetch = (url) => {
                     
                })
                .then((data) => {
-                    setData(data);
+                    setData(data.addresses);
                     setLoading(false);
                     setError(null);
                })
@@ -24,7 +24,7 @@ export  const useFetch = (url) => {
                     setLoading(false);
                     setError(err.message);
                });
-     }, [url]);
+     }, []);
   return (
    {data,loading,error}
   )
