@@ -27,10 +27,11 @@ console.log(data)
    !showMenu?<>
      <DetailsHeader toggleReview={toggleReview} address={address} setAddress={setAddress} comment={comment} amenities={amenities} /> 
     {comment.length == 0 && address.length != 0 ? <NotFound toggleReview={toggleReview}/> :<main className='flex max-w-7xl mx-auto'>
-        <section className='w-3/5'>
+        <section className='flex flex-col lg:flex-row'>
+        <section className='lg:w-3/5 w-full'>
             <CommentArray comment={comment}/>
         </section>
-        <section className='lg:w-2/5 flex flex-wrap justify-center gap-1 p-8 h-fit max-w-md'>
+        <section className='lg:w-2/5  flex flex-wrap justify-center gap-1 lg:p-8 pt-2 h-fit max-w-md'>
         { details?.map(imag=>{
             return(
                 imag.images?.map(image=>{
@@ -44,6 +45,7 @@ console.log(data)
             
           
         })}
+        </section>
         </section>
     </main>}
    </>:<Review toggleReview={toggleReview} address={address}/>

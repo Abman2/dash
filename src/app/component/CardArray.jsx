@@ -11,7 +11,7 @@ export default async function CardArray() {
    const comment = details.map(x=>x.comment)
 
      return (
-          <section className='grid grid-cols-2 p-1  gap-5 lg:w-2/5 max-w-md mx-auto h-screen lg:h-full overflow-hidden lg:absolute -top-10 right-0 bg-slate-100'>
+          <section className='md:grid hidden grid-cols-2 p-1  gap-5 lg:w-2/5 max-w-md mx-auto h-screen lg:h-full overflow-hidden lg:absolute -top-10 right-0 bg-slate-100'>
                {comment[0]?.map((comment) => {
                     return (
                          <Card

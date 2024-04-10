@@ -11,8 +11,8 @@ export const Review = ({ toggleReview, address }) => {
   }
   const amenities = ["Parking Lot", "Free wifi", "NightLife", "Hospitals", "Adult","security"]
      return (
-          <div className='bg-slate-800 max-w-sreen flex justify-center items-center h-screen bg-blend-hue p-8'>
-               <div className=' lg:w-2/5 w-4/5 bg-white mx-auto p-4 '>
+          <div className='bg-slate-800 max-w-sreen w-screen flex justify-center items-center h-screen bg-blend-hue md:p-8'>
+               <div className=' lg:w-2/5 w-full bg-white mx-auto p-4 h-full lg:h-fit'>
                     <h1 className='text-center font-bold'>Review Location</h1>
                     <h2 className='font-semibold text-xl uppercase'>{address}</h2>
                     <form action=''>
